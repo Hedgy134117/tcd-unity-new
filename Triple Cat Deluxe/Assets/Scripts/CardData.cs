@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardData : MonoBehaviour {
+[CreateAssetMenu(fileName = "New Card", menuName = "Card", order = 53)]
+public class CardData : ScriptableObject {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public string cardName;
+    public Sprite cardImage;
+    public string cardLore;
+    public string cardEffect;
+
+    public int pointValue;
+
 }
