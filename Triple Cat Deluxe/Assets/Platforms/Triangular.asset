@@ -8,10 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95eac92cc15123d4fadd5783436c0ded, type: 3}
-  m_Name: Queso 5
+  m_Script: {fileID: 11500000, guid: 5c6272410fccf044ca3db63ee2123214, type: 3}
+  m_Name: Triangular
   m_EditorClassIdentifier: 
-  catName: 
-  facingRight: 0
-  size: {x: 0, y: 0, z: 0}
-  sprite: {fileID: 0}
+  platformName: Triangular
+  sprite: {fileID: 21300000, guid: c289dbc3cd12ce74887ad14b0789e513, type: 3}
+  size: {x: 1, y: 1, z: 1}

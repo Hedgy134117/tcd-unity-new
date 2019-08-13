@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95eac92cc15123d4fadd5783436c0ded, type: 3}
-  m_Name: Queso 2
+  m_Name: 11 Qwerty
   m_EditorClassIdentifier: 
-  catName: 
+  catName: Qwerty
   facingRight: 0
-  size: {x: 0, y: 0, z: 0}
-  sprite: {fileID: 0}
+  size: {x: 0.3, y: 0.3, z: 1}
+  sprite: {fileID: 21300000, guid: 5ab86ce7d0113454da95e51b2e0254ce, type: 3}

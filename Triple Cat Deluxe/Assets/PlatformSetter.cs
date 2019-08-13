@@ -2,28 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class PlatformSetter : MonoBehaviour {
 
-public class CatSetter : MonoBehaviour {
-    
-    // This script sets the correct variables based on which cat the player selected
+    // This script sets the correct variables based on which platform the player selected
 
     private SpriteRenderer spriteRenderer;
-    public CatData catData;
+    public PlatformData platformData;
 
     private void Start()
     {
-        // Get the sprite renderer
+        // Get the spriteRenderer
         spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
 
         // Set the sprite
-        spriteRenderer.sprite = catData.sprite;
+        spriteRenderer.sprite = platformData.sprite;
 
         // Set the scale
-        transform.localScale = catData.size;
+        transform.localScale = platformData.size;
 
         // Add the collider
         // Unity automatically sets the collider to equal the sprite
         this.gameObject.AddComponent<PolygonCollider2D>();
     }
-
 }

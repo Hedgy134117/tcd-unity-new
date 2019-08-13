@@ -7,7 +7,7 @@ public class CatData : ScriptableObject {
 
     public string catName;
     public bool facingRight;
-    public Vector3 size;
+    public Vector3 size = new Vector3(1, 1, 1);
     public Sprite sprite;
 
 }

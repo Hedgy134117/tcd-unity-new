@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95eac92cc15123d4fadd5783436c0ded, type: 3}
-  m_Name: Sausage
+  m_Name: 10 Washington
   m_EditorClassIdentifier: 
-  catName: Sausage
-  facingRight: 1
-  size: {x: 1, y: 1, z: 1}
-  sprite: {fileID: 21300000, guid: 850753a2126e7c24ca0fe42c833f0714, type: 3}
+  catName: Washington
+  facingRight: 0
+  size: {x: 0.6, y: 0.6, z: 1}
+  sprite: {fileID: 21300000, guid: c3314b0714f396243a8d7d1606b40348, type: 3}
