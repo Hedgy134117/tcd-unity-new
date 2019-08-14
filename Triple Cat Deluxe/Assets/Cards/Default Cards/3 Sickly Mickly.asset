@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a14dc0ece5dbc42ad951ec9832e569, type: 3}
+  m_Name: 3 Sickly Mickly
+  m_EditorClassIdentifier: 
+  cardName: Sickly Mickly
+  cardImage: {fileID: 21300000, guid: c488ae8bd4b0f244d973c4013bc84558, type: 3}
+  cardLore: They couldn't save him from the last of it.
+  cardEffect: Cats get sick
+  pointValue: 1
+  spawnsObject: 0
+  obj: {fileID: 0}
+  amountToSpawn: 0
+  randomSpawn: 0
+  impactsStats: 0
+  speedMultiplier: 0
+  jumpMultiplier: 0
+  sizeMultiplier: 0
+  specialEffect: 1

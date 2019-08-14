@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 [CreateAssetMenu(fileName = "New Card", menuName = "Card", order = 53)]
 public class CardData : ScriptableObject {
@@ -11,5 +12,18 @@ public class CardData : ScriptableObject {
     public string cardEffect;
 
     public int pointValue;
+
+    [Header("Effects")]
+    public bool spawnsObject;
+    public GameObject obj;
+    public int amountToSpawn = 1;
+    public bool randomSpawn;
+    [Space(10)]
+    public bool impactsStats;
+    public float speedMultiplier = 1;
+    public float jumpMultiplier = 1;
+    public float sizeMultiplier = 1;
+    [Space(10)]
+    public bool specialEffect;
 
 }
