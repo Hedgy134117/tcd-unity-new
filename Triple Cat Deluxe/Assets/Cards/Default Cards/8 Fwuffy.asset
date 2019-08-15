@@ -17,7 +17,7 @@ MonoBehaviour:
   cardEffect: Ceiling over stage
   pointValue: 1
   spawnsObject: 1
-  obj: {fileID: 0}
+  obj: {fileID: 1451828027369018, guid: f5ac6d328038c4746b5a45cccb181a7a, type: 2}
   amountToSpawn: 1
   randomSpawn: 0
   impactsStats: 0

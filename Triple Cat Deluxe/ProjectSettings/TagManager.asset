@@ -7,6 +7,7 @@ TagManager:
   - playerOne
   - platform
   - playerTwo
+  - cardObject
   layers:
   - Default
   - TransparentFX
