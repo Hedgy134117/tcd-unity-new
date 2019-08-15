@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CardDraw.unity
     guid: 108ad8ecd0da91b428ac7e588cf19644
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 8559344c7ca7cd24c8cea2e029aa681a
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay.unity
+    guid: 3fd7becd82c3fae42b479c16a787796c
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: bf597a437c96aee4aac68379faa2a720
+  - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: f5b21aeceabfe9848b48fd795950b5cd
   m_configObjects: {}
