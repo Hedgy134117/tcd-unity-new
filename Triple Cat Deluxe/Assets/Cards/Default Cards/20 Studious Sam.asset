@@ -9,19 +9,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3a14dc0ece5dbc42ad951ec9832e569, type: 3}
-  m_Name: 13 Jimmy
+  m_Name: 20 Studious Sam
   m_EditorClassIdentifier: 
-  cardName: Jimmy
-  cardImage: {fileID: 21300000, guid: 3b99ddcbbc2f20b4c8070d9f7757f48a, type: 3}
-  cardLore: 200 decibels is not even his true form. How high can he go???
-  cardEffect: Sound Symbol
-  pointValue: 3
-  spawnsObject: 0
+  cardName: Studious Sam
+  cardImage: {fileID: 21300000, guid: bf5ba2981a2d7d44ea97737f2c9f8e6d, type: 3}
+  cardLore: Grades were meant to be broken
+  cardEffect: Binary code
+  pointValue: 2
+  spawnsObject: 1
   obj: {fileID: 0}
   amountToSpawn: 1
-  randomSpawn: 0
+  randomSpawn: 1
   impactsStats: 0
   speedMultiplier: 1
   jumpMultiplier: 1
   sizeMultiplier: 1
-  specialEffect: 1
+  specialEffect: 0
