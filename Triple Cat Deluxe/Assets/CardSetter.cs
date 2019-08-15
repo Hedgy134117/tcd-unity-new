@@ -50,7 +50,7 @@ public class CardSetter : MonoBehaviour
             // When the tiemr ends
             if (timerLength <= 0)
             {
-                SceneManager.LoadScene("_Game", LoadSceneMode.Single);
+                SceneManager.LoadScene(0);
             }
         }
     }

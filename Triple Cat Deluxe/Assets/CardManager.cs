@@ -49,13 +49,12 @@ public class CardManager : MonoBehaviour {
 
         if (effectApplied == false)
         {
-            // If the card spawns an object and the object hasn't spawned yet
+            // If the card spawns an object
             if (cardData.spawnsObject)
             {
                 // Spawn the object x amount of times 
                 for (int i = 0; i < cardData.amountToSpawn; i++)
                 {
-                    // If the card spawns the objects at random positions
                     if (cardData.randomSpawn)
                     {
                         Instantiate(cardData.obj, new Vector3(Random.Range(-5f, 5f), Random.Range(1.5f, 4.5f), 0), new Quaternion(0, 0, 0, 0));
@@ -76,7 +75,6 @@ public class CardManager : MonoBehaviour {
                 playerTwo.GetComponent<CatMovement>().moveForce *= cardData.speedMultiplier;
                 playerTwo.GetComponent<CatMovement>().jumpForce *= cardData.jumpMultiplier;
                 playerTwo.transform.localScale *= cardData.sizeMultiplier;
-                effectApplied = true;
             }
             // If the card has it's own special thing
             if (cardData.specialEffect)
@@ -86,10 +84,11 @@ public class CardManager : MonoBehaviour {
                     case "Sickly Mickly":
                         playerOne.GetComponent<SpriteRenderer>().color = new Color(0, 255, 0);
                         playerTwo.GetComponent<SpriteRenderer>().color = new Color(0, 255, 0);
-                        effectApplied = true;
                         break;
                 }
             }
+
+            effectApplied = true;
         }
         
     }

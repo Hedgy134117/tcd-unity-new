@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 61096284830014962}
   - component: {fileID: 50269298430801020}
   m_Layer: 0
-  m_Name: 2 Mouse (Jimmy Jr.)
-  m_TagString: cardObject
+  m_Name: Mouse (Jimmy Jr.)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   cardLore: 200 decibels is not even his true form. How high can he go???
   cardEffect: Sound Symbol
   pointValue: 3
-  spawnsObject: 0
+  spawnsObject: 1
   obj: {fileID: 0}
   amountToSpawn: 1
   randomSpawn: 0
@@ -24,4 +24,4 @@ MonoBehaviour:
   speedMultiplier: 1
   jumpMultiplier: 1
   sizeMultiplier: 1
-  specialEffect: 1
+  specialEffect: 0

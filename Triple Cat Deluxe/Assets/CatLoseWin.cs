@@ -20,7 +20,7 @@ public class CatLoseWin : MonoBehaviour {
         }
         else
         {
-            SceneManager.LoadScene("CardDraw", LoadSceneMode.Single);
+            SceneManager.LoadScene(1);
         }
         
         scoreboardManager = GameObject.Find("ScoreboardManager").GetComponent<ScoreboardManager>();
