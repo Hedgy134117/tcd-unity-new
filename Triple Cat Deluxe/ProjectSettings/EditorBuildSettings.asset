@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Controls.unity
     guid: f5b21aeceabfe9848b48fd795950b5cd
+  - enabled: 1
+    path: Assets/Scenes/CatSelect.unity
+    guid: f02ede3935bb8e54dacbe24c6bf45232
+  - enabled: 1
+    path: Assets/Scenes/StageSelect.unity
+    guid: b7c78ed5aeaed1e4e9991c8916758592
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 3cff0a53fb4f22f41ba2475829112c15
   m_configObjects: {}
