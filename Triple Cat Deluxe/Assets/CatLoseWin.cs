@@ -12,8 +12,18 @@ public class CatLoseWin : MonoBehaviour {
 
     private void Start()
     {
-        cardManager = GameObject.Find("CardManager").GetComponent<CardManager>();
-        scoreboardManager = GameObject.Find("Scoreboard").GetComponent<ScoreboardManager>();
+        // If Game started in unity on the gameplay scene then go to the card scene
+        // otherwise run as normal
+        if (GameObject.Find("CardManager") != null)
+        {
+            cardManager = GameObject.Find("CardManager").GetComponent<CardManager>();
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
+        
+        scoreboardManager = GameObject.Find("ScoreboardManager").GetComponent<ScoreboardManager>();
     }
 
     private void Update()

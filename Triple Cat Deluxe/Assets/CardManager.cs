@@ -11,6 +11,7 @@ public class CardManager : MonoBehaviour {
 
     bool effectApplied = false;
 
+    // Put object in dont destroy on load
     private static CardManager cardManagerInstance;
 
     private void Start()
