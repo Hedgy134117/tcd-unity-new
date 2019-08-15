@@ -9,8 +9,19 @@ public class PlatformSetter : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     public PlatformData platformData;
 
+    public PlatformManager platformManager;
+
     private void Start()
     {
+        // Get the platformManager
+        if (GameObject.Find("PlatformManager") != null)
+        {
+            platformManager = GameObject.Find("PlatformManager").GetComponent<PlatformManager>();
+
+            // Set the correct platform
+            platformData = platformManager.platform;
+        }
+
         // Get the spriteRenderer
         spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
 
