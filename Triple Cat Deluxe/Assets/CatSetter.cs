@@ -10,8 +10,28 @@ public class CatSetter : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     public CatData catData;
 
+    public UICatSelect catManager;
+
     private void Start()
     {
+        // Get the catManager
+        if (GameObject.Find("CatManager") != null)
+        {
+            catManager = GameObject.Find("CatManager").GetComponent<UICatSelect>();
+
+            // Set the correct cat
+            switch (this.gameObject.tag)
+            {
+                case "playerOne":
+                    catData = catManager.playerOne;
+                    break;
+
+                case "playerTwo":
+                    catData = catManager.playerTwo;
+                    break;
+            }
+        }
+
         // Get the sprite renderer
         spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
 
