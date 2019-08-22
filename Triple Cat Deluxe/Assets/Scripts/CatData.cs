@@ -9,5 +9,6 @@ public class CatData : ScriptableObject {
     public bool facingRight;
     public Vector3 size = new Vector3(1, 1, 1);
     public Sprite sprite;
+    public Sprite winSprite;
 
 }

@@ -15,3 +15,4 @@ MonoBehaviour:
   facingRight: 1
   size: {x: 0.6, y: 0.6, z: 1}
   sprite: {fileID: 21300000, guid: bb100b86fd3d9014299d54b87ecc35dd, type: 3}
+  winSprite: {fileID: 21300000, guid: 0070bce36d58944409c0a10743bc6135, type: 3}

@@ -65,6 +65,8 @@ public class CardManager : MonoBehaviour {
                         Instantiate(cardData.obj, new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
                     }
                 }
+
+                effectApplied = true;
             }
             // If the card impacts stats
             if (cardData.impactsStats)
