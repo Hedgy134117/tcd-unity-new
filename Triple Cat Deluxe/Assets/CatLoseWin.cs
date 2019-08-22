@@ -59,7 +59,14 @@ public class CatLoseWin : MonoBehaviour {
             if (scoreboardManager.playerOnePoints >= pointsToWin || scoreboardManager.playerTwoPoints >= pointsToWin)
             {
                 // set the winner cat and load the win screen
-                winManager.winner = gameObject.GetComponent<CatSetter>().catData;
+                if (scoreboardManager.playerOnePoints >= pointsToWin)
+                {
+                    winManager.winner = GameObject.FindGameObjectWithTag("playerOne").GetComponent<CatSetter>().catData;
+                }
+                else if (scoreboardManager.playerTwoPoints >= pointsToWin)
+                {
+                    winManager.winner = GameObject.FindGameObjectWithTag("playerTwo").GetComponent<CatSetter>().catData;
+                }
                 SceneManager.LoadScene("WinScreen", LoadSceneMode.Single);
             }
             else

@@ -16,11 +16,17 @@ public class CardSetter : MonoBehaviour
     public Sprite bg2;
     public Sprite bg3;
     public Sprite bg4;
+    public Sprite bord1;
+    public Sprite bord2;
+    public Sprite bord3;
+    public Sprite bord4;
 
+    public Image cardNameBg;
     public TMP_Text cardName;
     public Image cardImage;
     public TMP_Text cardLore;
     public TMP_Text cardEffect;
+    public Image cardBorder;
 
     [HideInInspector]
     public bool cardDrawn = false;
@@ -70,26 +76,31 @@ public class CardSetter : MonoBehaviour
             // Make it visible
             bg.color = new Color(255, 255, 255, 255);
 
-            // Set the correct background
+            // Set the correct background and border
             if (cardData.pointValue == 1)
             {
                 bg.sprite = bg1;
+                cardBorder.sprite = bord1;
             }
             else if (cardData.pointValue == 2)
             {
                 bg.sprite = bg2;
+                cardBorder.sprite = bord2;
             }
             else if (cardData.pointValue == 3)
             {
                 bg.sprite = bg3;
+                cardBorder.sprite = bord3;
             }
             else if (cardData.pointValue == 4)
             {
                 bg.sprite = bg4;
+                cardBorder.sprite = bord4;
             }
 
             // Set all the text and images
             // Also set them visible
+            cardNameBg.gameObject.SetActive(true);
             cardName.text = cardData.cardName;
             cardName.gameObject.SetActive(true);
             cardImage.sprite = cardData.cardImage;
@@ -98,6 +109,7 @@ public class CardSetter : MonoBehaviour
             cardLore.gameObject.SetActive(true);
             cardEffect.text = cardData.cardEffect;
             cardEffect.gameObject.SetActive(true);
+            cardBorder.gameObject.SetActive(true);
 
             // Player drew a card, set cardDrawn to true
             cardDrawn = true;
