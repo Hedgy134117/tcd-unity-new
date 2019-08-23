@@ -46,6 +46,7 @@ public class CardManager : MonoBehaviour {
     {
         GameObject playerOne = GameObject.FindGameObjectWithTag("playerOne");
         GameObject playerTwo = GameObject.FindGameObjectWithTag("playerTwo");
+        GameObject platform = GameObject.FindGameObjectWithTag("platform");
 
         if (effectApplied == false)
         {
@@ -85,10 +86,18 @@ public class CardManager : MonoBehaviour {
             {
                 switch (cardData.cardName)
                 {
+                    // Sick Cats
+                    // Each cat has a green tint
                     case "Sickly Mickly":
                         playerOne.GetComponent<SpriteRenderer>().color = new Color(0, 255, 0);
                         playerTwo.GetComponent<SpriteRenderer>().color = new Color(0, 255, 0);
                         effectApplied = true;
+                        break;
+
+                    // Ground Shakes
+                    case "meOW":
+                        // TODO: rewrite this to actually make the gorund shake (smaller values?)
+                        platform.transform.localPosition += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
                         break;
                 }
             }
