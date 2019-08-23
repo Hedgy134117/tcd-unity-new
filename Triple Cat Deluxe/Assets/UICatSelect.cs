@@ -11,6 +11,7 @@ public class UICatSelect : MonoBehaviour {
     private GameObject playerTwoObject;
 
     public List<CatData> catDatas;
+    public Sprite questionMark;
 
     // Put object in dont destroy on load
     private static UICatSelect catManagerInstance;
@@ -59,6 +60,47 @@ public class UICatSelect : MonoBehaviour {
                 playerSelecting = 0;
                 break;
         }
+    }
+
+    public void randomSelectCat()
+    {
+        switch (playerSelecting)
+        {
+            case 1:
+                playerOne = catDatas[Random.Range(0, catDatas.Count)];
+                // Create the cat preview
+                playerOneObject = GameObject.FindGameObjectWithTag("playerOne");
+                playerOneObject.GetComponent<SpriteRenderer>().sprite = questionMark;
+                playerOneObject.transform.localScale = new Vector3(0.5f, 0.5f, 1);
+                Destroy(playerOneObject.GetComponent<PolygonCollider2D>());
+                playerOneObject.AddComponent<PolygonCollider2D>();
+                playerOneObject.transform.localPosition = new Vector3(-6.595f, 3f, 0f);
+
+                playerSelecting = 2;
+                break;
+
+            case 2:
+                playerTwo = catDatas[Random.Range(0, catDatas.Count)];
+                // Create the cat preview
+                playerTwoObject = GameObject.FindGameObjectWithTag("playerTwo");
+                playerTwoObject.GetComponent<SpriteRenderer>().sprite = questionMark;
+                playerTwoObject.transform.localScale = new Vector3(0.5f, 0.5f, 1);
+                Destroy(playerTwoObject.GetComponent<PolygonCollider2D>());
+                playerTwoObject.AddComponent<PolygonCollider2D>();
+                playerTwoObject.transform.localPosition = new Vector3(6.595f, 3f, 0f);
+
+                playerSelecting = 0;
+                break;
+        }
+    }
+
+    public void resetCatSelect()
+    {
+        playerSelecting = 1;
+        playerOne = null;
+        playerTwo = null;
+        playerOneObject.GetComponent<SpriteRenderer>().sprite = null;
+        playerTwoObject.GetComponent<SpriteRenderer>().sprite = null;
     }
 
 }
