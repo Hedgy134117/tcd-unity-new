@@ -24,5 +24,10 @@ MonoBehaviour:
   impactsStats: 0
   speedMultiplier: 1
   jumpMultiplier: 1
-  sizeMultiplier: 1
+  sizeMultiplierX: 1
+  sizeMultiplierY: 1
   specialEffect: 1
+  specialMaterial: {fileID: 0}
+  specialObjects:
+  - {fileID: 1753297023416058, guid: 84367a6a938966140afafe7f6a3521a1, type: 2}
+  - {fileID: 1753297023416058, guid: 84367a6a938966140afafe7f6a3521a1, type: 2}

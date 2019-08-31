@@ -8,6 +8,7 @@ public class CatMovement : MonoBehaviour {
 
     [System.NonSerialized]
     public bool canJump = false;
+    public bool canFly = false;
 
     public float moveForce;
     public float jumpForce;
@@ -26,8 +27,11 @@ public class CatMovement : MonoBehaviour {
                 {
                     // Apply force to make the player jump
                     this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-                    // The player can't jump again because they're no longer on the floor
-                    canJump = false;
+                    // The player can't jump again because they're no longer on the floor (and the card doesn't let them fly)
+                    if (!canFly)
+                    {
+                        canJump = false;
+                    }                   
                 }
             }
             // A -> Left

@@ -11,6 +11,8 @@ public class CardManager : MonoBehaviour {
 
     bool effectApplied = false;
 
+    
+
     // Put object in dont destroy on load
     private static CardManager cardManagerInstance;
 
@@ -75,10 +77,10 @@ public class CardManager : MonoBehaviour {
                 // Impact each stat
                 playerOne.GetComponent<CatMovement>().moveForce *= cardData.speedMultiplier;
                 playerOne.GetComponent<CatMovement>().jumpForce *= cardData.jumpMultiplier;
-                playerOne.transform.localScale *= cardData.sizeMultiplier;
+                playerOne.transform.localScale = new Vector3(playerOne.transform.localScale.x * cardData.sizeMultiplierX, playerOne.transform.localScale.y * cardData.sizeMultiplierY, playerOne.transform.localScale.z);
                 playerTwo.GetComponent<CatMovement>().moveForce *= cardData.speedMultiplier;
                 playerTwo.GetComponent<CatMovement>().jumpForce *= cardData.jumpMultiplier;
-                playerTwo.transform.localScale *= cardData.sizeMultiplier;
+                playerTwo.transform.localScale = new Vector3(playerTwo.transform.localScale.x * cardData.sizeMultiplierX, playerTwo.transform.localScale.y * cardData.sizeMultiplierY, playerTwo.transform.localScale.z); ;
                 effectApplied = true;
             }
             // If the card has it's own special thing
@@ -96,8 +98,38 @@ public class CardManager : MonoBehaviour {
 
                     // Ground Shakes
                     case "meOW":
-                        // TODO: rewrite this to actually make the gorund shake (smaller values?)
-                        platform.transform.localPosition += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
+                        platform.transform.localPosition += new Vector3(Random.Range(-0.5f, 0.5f), 0f, 0f);
+                        break;
+
+                    // Flying Cats
+                    case "Rocky":
+                        playerOne.GetComponent<CatMovement>().canFly = true;
+                        playerTwo.GetComponent<CatMovement>().canFly = true;
+                        effectApplied = true;
+                        break;
+
+                    // Rising Platform
+                    case "Fwuffy Jr.":
+                        platform.transform.localPosition += new Vector3(0f, 0.01f);
+                        break;
+
+                    // Slippery Floor
+                    case "Scrub a Dub Tub":
+                        platform.GetComponent<Rigidbody2D>().sharedMaterial = cardData.specialMaterial;
+                        effectApplied = true;
+                        break;
+
+                    // Walls
+                    case "Kitty Korner":
+                        Instantiate(cardData.specialObjects[0], new Vector3(-11f, 4f, 1f), Quaternion.identity);
+                        Instantiate(cardData.specialObjects[1], new Vector3(11f, 4f, 1f), Quaternion.identity);
+                        effectApplied = true;
+                        break;
+
+                    // Cats are attracted to eachother
+                    case "Nice Kitty":
+                        playerOne.transform.localPosition = Vector3.MoveTowards(playerOne.transform.localPosition, playerTwo.transform.localPosition, 1f);
+                        playerTwo.transform.localPosition = Vector3.MoveTowards(playerTwo.transform.localPosition, playerOne.transform.localPosition, 1f);
                         break;
                 }
             }

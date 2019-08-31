@@ -17,12 +17,15 @@ MonoBehaviour:
     is here to thot it up.
   cardEffect: Happy Sun!!!
   pointValue: 2
-  spawnsObject: 0
-  obj: {fileID: 0}
+  spawnsObject: 1
+  obj: {fileID: 1094665699562622, guid: 58f16f18d7f628c41b5d0eb63aac190e, type: 2}
   amountToSpawn: 1
   randomSpawn: 0
   impactsStats: 0
   speedMultiplier: 1
   jumpMultiplier: 1
-  sizeMultiplier: 1
-  specialEffect: 1
+  sizeMultiplierX: 1
+  sizeMultiplierY: 1
+  specialEffect: 0
+  specialMaterial: {fileID: 0}
+  specialObjects: []

@@ -23,5 +23,8 @@ MonoBehaviour:
   impactsStats: 1
   speedMultiplier: 1
   jumpMultiplier: 1
-  sizeMultiplier: 2
+  sizeMultiplierX: 2
+  sizeMultiplierY: 2
   specialEffect: 0
+  specialMaterial: {fileID: 0}
+  specialObjects: []

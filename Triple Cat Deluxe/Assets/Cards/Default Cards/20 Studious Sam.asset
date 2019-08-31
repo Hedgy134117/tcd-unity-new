@@ -17,11 +17,14 @@ MonoBehaviour:
   cardEffect: Binary code
   pointValue: 2
   spawnsObject: 1
-  obj: {fileID: 0}
+  obj: {fileID: 1984255730467330, guid: 2f3d4ec327468324b97287453be8803d, type: 2}
   amountToSpawn: 1
   randomSpawn: 1
   impactsStats: 0
   speedMultiplier: 1
   jumpMultiplier: 1
-  sizeMultiplier: 1
+  sizeMultiplierX: 1
+  sizeMultiplierY: 1
   specialEffect: 0
+  specialMaterial: {fileID: 0}
+  specialObjects: []

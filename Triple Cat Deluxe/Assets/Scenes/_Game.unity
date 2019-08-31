@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c76f0efe81381644bcffb7df2daf0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canFly: 0
   moveForce: 5
   jumpForce: 8
 --- !u!114 &45327626
@@ -1395,6 +1396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c76f0efe81381644bcffb7df2daf0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canFly: 0
   moveForce: 5
   jumpForce: 8
 --- !u!50 &1754953872

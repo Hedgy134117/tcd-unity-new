@@ -22,8 +22,11 @@ public class CardData : ScriptableObject {
     public bool impactsStats;
     public float speedMultiplier = 1;
     public float jumpMultiplier = 1;
-    public float sizeMultiplier = 1;
+    public float sizeMultiplierX = 1;
+    public float sizeMultiplierY = 1;
     [Space(10)]
     public bool specialEffect;
+    public PhysicsMaterial2D specialMaterial;
+    public List<GameObject> specialObjects;
 
 }

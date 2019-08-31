@@ -8,6 +8,7 @@ using TMPro;
 public class CardSetter : MonoBehaviour
 {
 
+    public Animator revealCardAnim;
     private Image bg;
     public CardData cardData;
     public CardManager cardManager;
@@ -66,6 +67,9 @@ public class CardSetter : MonoBehaviour
         // If a card has not already been drawn
         if (cardDrawn == false)
         {
+            // Play the animation
+            revealCardAnim.Play("Reveal Card");
+
             // Choose a random card
             int random = Random.Range(0, cardManager.defaultCards.Count - 1);
             cardData = cardManager.defaultCards[random];

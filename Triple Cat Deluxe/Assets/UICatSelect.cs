@@ -40,6 +40,7 @@ public class UICatSelect : MonoBehaviour {
                 playerOneObject = GameObject.FindGameObjectWithTag("playerOne");
                 playerOneObject.GetComponent<SpriteRenderer>().sprite = playerOne.sprite;
                 playerOneObject.transform.localScale = playerOne.size;
+                playerOneObject.transform.localRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
                 Destroy(playerOneObject.GetComponent<PolygonCollider2D>());
                 playerOneObject.AddComponent<PolygonCollider2D>();
                 playerOneObject.transform.localPosition = new Vector3(-6.595f, 3f, 0f);
@@ -53,6 +54,7 @@ public class UICatSelect : MonoBehaviour {
                 playerTwoObject = GameObject.FindGameObjectWithTag("playerTwo");
                 playerTwoObject.GetComponent<SpriteRenderer>().sprite = playerTwo.sprite;
                 playerTwoObject.transform.localScale = playerTwo.size;
+                playerTwoObject.transform.localRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
                 Destroy(playerTwoObject.GetComponent<PolygonCollider2D>());
                 playerTwoObject.AddComponent<PolygonCollider2D>();
                 playerTwoObject.transform.localPosition = new Vector3(6.595f, 3f, 0f);
@@ -72,6 +74,7 @@ public class UICatSelect : MonoBehaviour {
                 playerOneObject = GameObject.FindGameObjectWithTag("playerOne");
                 playerOneObject.GetComponent<SpriteRenderer>().sprite = questionMark;
                 playerOneObject.transform.localScale = new Vector3(0.5f, 0.5f, 1);
+                playerOneObject.transform.localRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
                 Destroy(playerOneObject.GetComponent<PolygonCollider2D>());
                 playerOneObject.AddComponent<PolygonCollider2D>();
                 playerOneObject.transform.localPosition = new Vector3(-6.595f, 3f, 0f);
@@ -85,6 +88,7 @@ public class UICatSelect : MonoBehaviour {
                 playerTwoObject = GameObject.FindGameObjectWithTag("playerTwo");
                 playerTwoObject.GetComponent<SpriteRenderer>().sprite = questionMark;
                 playerTwoObject.transform.localScale = new Vector3(0.5f, 0.5f, 1);
+                playerTwoObject.transform.localRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
                 Destroy(playerTwoObject.GetComponent<PolygonCollider2D>());
                 playerTwoObject.AddComponent<PolygonCollider2D>();
                 playerTwoObject.transform.localPosition = new Vector3(6.595f, 3f, 0f);

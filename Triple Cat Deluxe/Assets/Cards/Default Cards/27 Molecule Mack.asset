@@ -21,8 +21,11 @@ MonoBehaviour:
   obj: {fileID: 0}
   amountToSpawn: 1
   randomSpawn: 0
-  impactsStats: 0
+  impactsStats: 1
   speedMultiplier: 1
   jumpMultiplier: 1
-  sizeMultiplier: 0.25
+  sizeMultiplierX: 0.25
+  sizeMultiplierY: 0.25
   specialEffect: 0
+  specialMaterial: {fileID: 0}
+  specialObjects: []

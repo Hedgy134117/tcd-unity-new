@@ -17,11 +17,14 @@ MonoBehaviour:
   cardEffect: Cowboy hat
   pointValue: 3
   spawnsObject: 1
-  obj: {fileID: 0}
+  obj: {fileID: 1023534171208748, guid: 277f967cefbcf38488e7d07d5bc811ef, type: 2}
   amountToSpawn: 1
   randomSpawn: 1
   impactsStats: 0
   speedMultiplier: 1
   jumpMultiplier: 1
-  sizeMultiplier: 1
+  sizeMultiplierX: 1
+  sizeMultiplierY: 1
   specialEffect: 0
+  specialMaterial: {fileID: 0}
+  specialObjects: []
