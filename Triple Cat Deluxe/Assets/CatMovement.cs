@@ -67,6 +67,12 @@ public class CatMovement : MonoBehaviour {
                     this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
                     // The player can't jump again because they're no longer on the floor
                     canJump = false;
+
+                    // The player can't jump again because they're no longer on the floor (and the card doesn't let them fly)
+                    if (!canFly)
+                    {
+                        canJump = false;
+                    }
                 }
             }
             // Left -> Left

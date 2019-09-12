@@ -72,7 +72,7 @@ public class CatLoseWin : MonoBehaviour {
             else
             {
                 // Go to card drawing
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene("CardDraw");
             }
         }
     }

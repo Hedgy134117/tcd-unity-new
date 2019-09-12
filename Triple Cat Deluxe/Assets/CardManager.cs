@@ -128,8 +128,8 @@ public class CardManager : MonoBehaviour {
 
                     // Cats are attracted to eachother
                     case "Nice Kitty":
-                        playerOne.transform.localPosition = Vector3.MoveTowards(playerOne.transform.localPosition, playerTwo.transform.localPosition, 1f);
-                        playerTwo.transform.localPosition = Vector3.MoveTowards(playerTwo.transform.localPosition, playerOne.transform.localPosition, 1f);
+                        playerOne.transform.localPosition = Vector3.MoveTowards(playerOne.transform.localPosition, playerTwo.transform.localPosition, 0.05f);
+                        playerTwo.transform.localPosition = Vector3.MoveTowards(playerTwo.transform.localPosition, playerOne.transform.localPosition, 0.05f);
                         break;
                 }
             }
