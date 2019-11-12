@@ -44,6 +44,9 @@ public class PlatformManager : MonoBehaviour {
 
     public void changePreview(Sprite image)
     {
+        previewImage = GameObject.Find("Preview Image").GetComponent<Image>();
+        previewText = GameObject.Find("Preview Text").GetComponent<TMP_Text>();
+
         previewImage.sprite = image;
         previewText.text = platform.platformName;
     }

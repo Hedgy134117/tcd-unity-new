@@ -9,6 +9,7 @@ public class CardSetter : MonoBehaviour
 {
 
     public Animator revealCardAnim;
+    public Animator flipCardAnim;
     private Image bg;
     public CardData cardData;
     public CardManager cardManager;
@@ -45,7 +46,7 @@ public class CardSetter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // Draw a card
-            DrawCard();
+            DrawCard(true);
         }
 
         // If the card is drawn
@@ -62,13 +63,18 @@ public class CardSetter : MonoBehaviour
         }
     }
 
-    public void DrawCard()
+    public void DrawCard(bool usingKeyboard)
     {
         // If a card has not already been drawn
         if (cardDrawn == false)
         {
             // Play the animation
             revealCardAnim.Play("Reveal Card");
+
+            if (usingKeyboard)
+            {
+                flipCardAnim.Play("FlipCard");
+            }
 
             // Choose a random card
             int random = Random.Range(0, cardManager.defaultCards.Count - 1);
