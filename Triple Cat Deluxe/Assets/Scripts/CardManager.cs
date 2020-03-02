@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CardManager : MonoBehaviour {
 
+    public ModeManager modeManager;
+
     public List<CardData> defaultCards;
 
     public CardData cardData;
@@ -32,11 +34,11 @@ public class CardManager : MonoBehaviour {
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "_Game" && !effectApplied)
+        if (SceneManager.GetActiveScene().name == modeManager.sceneName && !effectApplied)
         {
             CardEffect();
         }
-        if (SceneManager.GetActiveScene().name != "_Game" && effectApplied)
+        if (SceneManager.GetActiveScene().name != modeManager.sceneName && effectApplied)
         {
             effectApplied = false;
         }
