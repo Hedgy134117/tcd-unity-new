@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -17,11 +18,14 @@ MonoBehaviour:
   cardEffect: Tumbleweeds
   pointValue: 4
   spawnsObject: 1
-  obj: {fileID: 0}
-  amountToSpawn: 1
+  obj: {fileID: 4557538300010330326, guid: aa7282adb0a03da40b227de6736c116d, type: 3}
+  amountToSpawn: 3
   randomSpawn: 1
   impactsStats: 0
   speedMultiplier: 1
   jumpMultiplier: 1
-  sizeMultiplier: 1
+  sizeMultiplierX: 1
+  sizeMultiplierY: 1
   specialEffect: 0
+  specialMaterial: {fileID: 0}
+  specialObjects: []
